@@ -5,8 +5,12 @@
     <link rel='stylesheet' href='/static/styles/main.css' />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}.</p>
-    <p>This page has been requested <strong>{{ counter }} times</strong>.</p>
+    <h1>Martin</h1>
+    <h2>Moisture</h2>
+    <ul>
+    {% for reading in readings %}
+      <li>{{reading.moisture}}</li>
+    {% endfor %}
+    </ul>
   </body>
 </html>

@@ -21,4 +21,4 @@ nginx:
     - web:web
 
 db:
-  image: redis
+  image: mongodb
